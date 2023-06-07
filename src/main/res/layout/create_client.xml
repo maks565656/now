@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_client">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:text="Пропустить"
+        android:textSize="15sp"
+        android:textColor="#1A6FEE" />
+
+    <TextView
+        android:id="@+id/c_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/sfpro_h"
+        android:text="Создание карты\nпациента"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+         />
+
+    <LinearLayout
+        android:id="@+id/p_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c_map"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpro_light"
+            android:text="Без карты пациента вы не сможете заказать анализы"
+            android:textColor="#939396"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sfpro_light"
+            android:text="В картах пациентов будут храниться результаты\nанализов вас и ваших близких."
+            android:textColor="#939396"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/c_name"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:background="@drawable/em_input"
+            android:textColorHint="#939396"
+            android:hint="Имя"/>
+        <EditText
+            android:id="@+id/c_otch"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/em_input"
+            android:hint="Отчество"
+            android:textColorHint="#939396"/>
+        <EditText
+            android:id="@+id/c_fam"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:textColorHint="#939396"
+            android:background="@drawable/em_input"
+            android:hint="Фамилия"/>
+        <EditText
+            android:id="@+id/c_birth"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:textColorHint="#939396"
+            android:editable="false"
+            android:onClick="setDate"
+            android:background="@drawable/em_input"
+            android:hint="Дата рождения"/>
+        <Spinner
+            android:id="@+id/c_pol"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:textColorHint="#939396"
+            android:entries="@array/pol"
+            android:background="@drawable/em_input"
+            android:hint="Пол"/>
+        <Button
+            android:id="@+id/cbutton"
+            android:fontFamily="@font/sfpro_bold"
+            android:layout_width="370dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/button_login"
+            android:text="Создать"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

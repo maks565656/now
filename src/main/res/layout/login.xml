@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добро пожаловать"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:text="Войдите, чтобы пользоваться функциями \nприложения"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Вход по E-mail"
+            android:textColor="#7E7E9A"
+            android:textSize="14sp" />
+
+        <EditText
+            android:layout_width="335dp"
+            android:layout_height="48dp"
+            android:id="@+id/email_input"
+            android:background="@drawable/em_input"
+            android:hint="example@mail.ru"
+            android:inputType="textEmailAddress"/>
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/Base.Theme.Medic.ButtonLogin"
+            android:layout_width="335dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="35dp"
+            android:text="Далее"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="login_click"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
